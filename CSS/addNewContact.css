@@ -1,0 +1,104 @@
+#overlay
+{
+  position: fixed;
+  display: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(40, 41, 41, 0.876);
+  z-index: 100;
+}
+
+#popup
+{
+  position: fixed;
+  gap: 5px;
+  top: 15%;
+  bottom: 16%;
+  left: 40px;
+  right: 40px;
+  /*width: 720px;
+  margin-left: -360px;*/
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px black;
+  z-index: 200;
+}
+
+.popupControls
+{
+  position: relative;
+}
+
+#popupClose
+{
+  position: absolute;
+  top: -38px;
+  right: -38px;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+.popupContent
+{
+  position: relative;
+  display: flex;
+  /*padding-top: 30px;*/
+  width: 100%;
+  height: 100%;
+  gap: 5px;
+}
+
+.listAllDB
+{
+  text-align: center;
+  width: 70%;
+  background-color: #075E54;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+
+.selectedToAddInContact
+{
+  width: 30%;
+  background-color: #075E54;
+  border-radius: 10px;
+  text-align: center;
+  word-break: break-all;
+}
+
+.allUserListDiv
+{
+  margin: 5px 10px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #128C7E;
+}
+
+#loadMoreUsers
+{
+  position: absolute;
+  bottom: -15px;
+  left: 10%;
+  background-color: #25D366;
+  border: none;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.addUserToContact
+{
+  background-color: #25D366;
+  border: none;
+  font-size: 15px;
+  border-radius: 5px;
+}

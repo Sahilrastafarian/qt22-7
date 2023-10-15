@@ -1,0 +1,36 @@
+.contact
+{
+  position: relative;
+  margin: 5px;
+  border-radius: 5px;
+  padding: none;
+  text-align: center;
+  background-color: #128c7e;
+  overflow-x: scroll;
+}
+
+.contact > p
+{
+  margin: 3px;
+}
+
+.lastSentMessage
+{
+  font-size: 12px;
+  color: white;
+  margin: 1px;
+}
+
+.notifier
+{
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: #25D366;
+  color: black;
+  width: 20px;
+  height: 20px;
+  font-weight: bold;
+}

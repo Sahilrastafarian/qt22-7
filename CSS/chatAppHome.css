@@ -1,0 +1,201 @@
+body
+{
+    margin: 0px;
+    background-color: #075e54;
+    color: white;
+}
+
+
+
+#error
+{
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    top: 2px;
+    left: 50%;
+    width: 400px;
+    margin-left: -200px;
+    z-index: 500;
+}
+
+.errorOccured
+{
+    display: block;
+    top: 50px;
+    background-color: rgb(244, 77, 77);
+}
+
+.noErrorOccured
+{
+    top: 50px;
+    display: block;
+    background-color: green;
+}
+
+.header
+{
+    position: fixed;
+    top: 5px;
+    left: 0px;
+    right: 0px;
+    background-color:#075e54;
+    text-align: center;
+    /*border: 1px solid black;*/
+    border-bottom: 1px solid black;
+    box-shadow: 0px 10px 11px -6px rgba(0,0,0,0.75);
+}
+
+.chatContainer
+{
+    background-color: #075e54;
+    border-radius: 10px;
+    height: 89%;
+    padding: 5px;
+}
+
+#chatTop
+{
+    display: flex;
+    align-items: center;
+    top: -5px;
+    width: 100%;
+    height: 40px;
+    z-index: 50;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+#iconForUser
+{
+    padding-top: 5px;
+    background-color: #111b21;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+#usernameForChat
+{
+    font-size: 20px;
+}
+
+.inputText
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    height: 40px;
+}
+
+.inputText > input
+{
+    min-width: 65%;
+    font-size: 25px;
+    border-radius: 5px;
+    margin-right: 1px;
+    margin-left: 2px;
+    background-color: #25D366;
+    border: none;
+}
+
+input:focus
+{
+    outline: none;
+}
+
+.inputText > button
+{
+    min-width: 25%;
+    font-size: 20px;
+    background-color: #25D366;
+    border: none;
+    border-radius: 5px;
+    margin-right: 2px;
+    margin-left: 1px;
+}
+
+.mainContainer
+{
+    display: flex;
+    margin-top: 80px;
+    width: 100%;
+    height: 85vh;
+}
+
+.contactsContainer
+{
+    height: 100%;
+    background-color: #075e54;
+    border-radius: 10px;
+}
+
+.leftContainer
+{
+    width: 30%;
+    padding: 5px 5px 10px 5px;
+    position: relative;
+}
+
+.rightContainer
+{
+    position: relative;
+    width: 70%;
+    padding: 5px;
+}
+
+#exportChat
+{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.addToContact
+{
+    position: absolute;
+    padding: none;
+    width: 30px;
+    height: 30px;
+    bottom: 0.7rem;
+    left: 0.5rem;
+    border-radius: 70px;
+    font-weight: bold;
+    border: none;
+    background-color: #25D366;
+}
+
+.newGroup
+{
+    position: absolute;
+    padding: none;
+    width: 30px;
+    height: 30px;
+    bottom: 0.7rem;
+    right: 0.5rem;
+    border-radius: 70px;
+    font-weight: bold;
+    border: none;
+    background-color: #25D366;
+}
+
+#chatDisplayer
+{
+    height: 92%;
+    width: 100%;
+    background-color: #128C7E;
+    overflow: auto;
+    border-radius: 10px;
+}

@@ -1,0 +1,25 @@
+#selectedContactsForGroup
+{
+  overflow: scroll;
+}
+
+
+.selecGroupPartMain
+{
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+  background-color: #128C7E;
+}
+
+.deleteSelectedGroupPart
+{
+  position: absolute;
+  top: 0px;
+  right: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}

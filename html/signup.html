@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <title>Hello, world!</title>
+  </head>
+  <body class="d-flex vw-100 vh-100 align-items-center justify-content-center">
+    <form method="POST" action="/signup" id="loginForm" enctype="application/x-www-form-urlencoded">
+        <div class="form-outline mb-4">
+          <label class="form-label" for="name">Name</label>
+          <input id="nameField" type="text" class="form-control" name="name" required/>
+          <div id="nameV"></div>
+        </div>
+
+        <div class="form-outline mb-4">
+            <label class="form-label" for="email">Email address</label>
+            <input id="emailField" type="email" class="form-control" name="email" required/>
+            <div id="emailV"></div>
+        </div>
+
+
+        <div class="form-outline mb-4">
+          <label class="form-label" for="password">Password</label>
+          <div class="input-group mb-3">
+            <input id="passwordField" type="password" class="form-control" name="password" required />
+            <div class="input-group-append">
+              <span class="input-group-text" id="showHidePasswd">
+                <i class="fas fa-eye" id="show_eye"></i>
+                <i class="fas fa-eye-slash d-none" id="hide_eye"></i>
+              </span>
+            </div>
+            <div id="password"></div>
+          </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col d-flex justify-content-center">
+                <button id="submitBtn" type="submit" class="btn btn-primary btn-block mb-4">Sign Up</button>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+           <a href="/login">Login</a>
+        </div>
+      </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+    <script src="signup.js"></script>
+  </body>
+</html>

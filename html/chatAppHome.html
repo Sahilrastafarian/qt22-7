@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat App</title>
+        <link rel="stylesheet" href="chatAppHome.css"/>
+        <link rel="stylesheet" href="addNewContact.css"/>
+        <link rel="stylesheet" href="contacts.css"/>
+        <link rel="stylesheet" href="message.css"/>
+        <link rel="stylesheet" href="createGroup.css"/>
+        <link rel="stylesheet" href="groupSelectedElements.css"/>
+        <link rel="stylesheet" href="searchBar.css"/>
+    </head>
+    <script src="/socket.io/socket.io.js"></script>
+    <body>
+        <div id="error"></div>
+        <div class="header"><h3>QT<sup>22</sup>/<sub>7</sub></h3></div>
+        <div class="mainContainer">
+            <div class="leftContainer">
+                <input type="text" placeholder="Search Chat" id="searchNode"/>
+                <div id="contactList" class="contactsContainer">
+                    
+                </div>
+                <button id="newContactAdd" class="addToContact"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+  <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+  <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+</svg></button>
+                <button id="newGroup" class="newGroup"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                  </svg></button>
+            </div>
+            <div class="rightContainer">
+                <a id="exportChat"></a>
+                <div id="myChat" class="chatContainer">
+                    <div id="chatTop"><div id="iconForUser"><span>&#8508;</span></div><div id="usernameForChat">click a chat to start Chatting</div></div>
+                    <div id="chatDisplayer"></div>
+                    <div class="inputText">
+                        <input id="textMessage" type="text" placeholder="Enter text here"/>
+                        <button id="sendMessage"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+  <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
+</svg></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="overlay">
+            <h3>New Contact</h3>
+            <div id="popup">
+                <div class="popupControls">
+                    <span id="popupClose">X</span>
+                </div>
+                <div class="popupContent">
+                    <div id="listAllUsersInDB" class="listAllDB">
+                        <div>Users</div>
+                    </div>
+                    <button id="loadMoreUsers">Load More</button>
+                    <div id="selectedUsersToAdd" class="selectedToAddInContact">
+                        <div>Selected User</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="groupOverlay">
+            <h3>New Group</h3>
+            <div id="groupMainContainer">
+                <span id="closeGroupOverlay">X</span>
+                <div id="contactListMine">
+                    <div>Users</div>
+                    
+                </div>
+                <button id="loadMoreGroupUsers">Load More</button>
+                <div id="createThisGroupName">
+                        <label for="groupName">Group Name</label>
+                        <input type="text" name="groupName" id="givenGroupName" placeholder="Group name"/>
+                </div>
+                <div id="selectedContactsForGroup">
+                    <div>Selected Contacts</div>
+                </div>
+                <button id="createThisGroup">Create Group</button>
+            </div>
+        </div>
+
+
+        <script src="chatGod.js"></script>
+        <script src="groupAdd.js"></script>
+    </body>
+</html>

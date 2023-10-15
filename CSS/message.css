@@ -1,0 +1,103 @@
+.messageContainer
+{
+  /*position: relative;
+  display: block;*/
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  /*border: 1px solid black;
+  border-radius: 10px;*/
+  margin-top: 5px;
+  margin-bottom: 2px;
+  padding: 20px;
+  overflow-x: none;
+  overflow-y: none;
+}
+
+.messageMy
+{
+  /*position: absolute;
+  right: 10px;
+  top: 4px;*/
+  background-color: #075e54;
+  align-self: flex-end;
+  word-wrap: anywhere;
+  max-width: 50%;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.messageMy > *
+{
+  overflow: auto;
+  margin: 0px;
+}
+
+.messageFrom
+{
+  /*position: absolute;
+  left: 10px;
+  top: 4px;*/
+  background-color: #075e54;
+  align-self: flex-start;
+  word-wrap: anywhere;
+  max-width: 50%;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.messageFrom > p
+{
+  margin: 0px;
+}
+
+.messageFrom > p
+{
+  margin: 0px;
+}
+
+.messageMyTop
+{
+  color: black;
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.messageFromTop
+{
+  color: black;
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.orChatLekeAaniHai
+{
+  background-color:  	#25D366;
+  border: none;
+  margin-left: 45%;
+}
+
+.timeStampMy
+{
+  position: absolute;
+  bottom: 3px;
+  right: 20px;
+  font-size: 10px;
+}
+
+.timeStampFrom
+{
+  position: absolute;
+  bottom: 3px;
+  left: 20px;
+  font-size: 10px;
+}
